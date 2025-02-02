@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Kasir</title>
+    <link rel="stylesheet" href="ahong.css">
+</head>
+<body>
+    <header>
+        <h1>Sistem Kasir</h1>
+    </header>
+    
+    <main>
+        <section id="input-form">
+            <h2>Tambah Item</h2>
+            <form>
+                <label for="item-name">Nama Item:</label>
+                <input type="text" id="item-name" name="item-name">
+                
+                <label for="item-quantity">Jumlah:</label>
+                <input type="number" id="item-quantity" name="item-quantity">
+                
+                <label for="item-price">Harga:</label>
+                <input type="number" id="item-price" name="item-price">
+                
+                <button type="button" onclick="addItem()">Tambah</button>
+            </form>
+        </section>
+        
+        <section id="cart">
+            <h2>Keranjang Belanja</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nama Item</th>
+                        <th>Jumlah</th>
+                        <th>Harga</th>
+                        <th>Total</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <!-- Daftar item akan ditambahkan di sini -->
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="total">
+            <h2>Total Pembayaran</h2>
+            <p id="total-amount">Rp 0</p>
+            <button type="button" onclick="checkout()">Checkout</button>
+        </section>
+    </main>
+    
+    <script src="lusiana.js"></script>
+</body>
+</html>
